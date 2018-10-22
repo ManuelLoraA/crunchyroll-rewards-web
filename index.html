@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crunchyroll Rewards</title>
+	<link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Links de Bootstrap y CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/js/plugins/fancybox-master/dist/jquery.fancybox.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  	<!-- google fonts -->
+  	<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:800,900|Montserrat+Alternates:400,500,600,700,800" rel="stylesheet">
+  	<!-- fontawesome -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
+  	<!-- Smooth Scroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <img src="assets/images/logos/logo.png">
+    </div>
+
+    <div class="login">
+        <div class="container">
+            <div class="form">
+                <div class="form-header row">
+                    <div class="col-md-3">
+                        <img src="assets/images/icons/premium-icon.png">
+                    </div>
+                    <div class="col-md-9">
+                        <h2>Hola usuario Premium,<br>
+                        ¡Te estábamos esperando!</h2>
+                    </div>
+                </div>
+                <div class="form-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Usuario o e-mail</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Introduzca su usuario">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Introduzca su contraseña">
+                        </div>
+                        <div class="center">
+                            <button type="submit" class="btn">Entrar</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="form-button"></div> -->
+            </div>
+        
+
+            <div class="forgot-ps">
+                <h6>¿Olvidaste tu contraseña? <a href="#">Presiona aquí</a></h6>
+            </div>
+        
+        </div>
+    </div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <p>Crunchyroll™ 2018</p>
+</div>
+
+
+
+<!-- Scripts principales Bootstrap y JS -->
+<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+<!-- fancybox scripts -->
+<script src="assets/js/plugins/fancybox-master/dist/jquery.fancybox.min.js"></script>
+<!-- Smooth Scroll -->
+<script>
+    $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top
+            }, 800, function(){
+        
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+            });
+        } // End if
+        });
+    });
+</script>
+</body>
+</html>
